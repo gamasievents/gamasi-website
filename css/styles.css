@@ -21,7 +21,8 @@ body {
 }
 
 body {
-  font-family: "DM Serif Display";
+  font-family: "Lora", Georgia, serif;
+  font-size: 1.06rem;
   color: var(--espresso);
   background-color: var(--ivory);
   background-image: url("../img/background-cropped.png");
@@ -71,7 +72,7 @@ a {
 }
 
 .brand span {
-  font-family: "DM Serif Display";
+  font-family: "Lora", Georgia, serif;
   font-size: 2rem;
   letter-spacing: 0.03em;
   font-weight: 600;
@@ -118,7 +119,7 @@ main {
 }
 
 .hero h1 {
-  font-family: "DM Serif Display";
+  font-family: "Lora", Georgia, serif;
   font-size: clamp(2rem, 4vw, 3.3rem);
   line-height: 1.07;
   margin: 0 0 12px;
@@ -223,7 +224,7 @@ main {
 .section h2 {
   margin-top: 0;
   margin-bottom: 12px;
-  font-family: "DM Serif Display";
+  font-family: "Lora", Georgia, serif;
   font-size: clamp(1.6rem, 3.2vw, 2.25rem);
 }
 
