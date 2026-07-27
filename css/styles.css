@@ -373,6 +373,111 @@ textarea {
   border-color: rgba(162, 69, 49, 0.35);
 }
 
+.cookie-banner {
+  position: fixed;
+  left: 16px;
+  right: 16px;
+  bottom: 16px;
+  z-index: 70;
+  display: none;
+}
+
+.cookie-banner.is-visible {
+  display: block;
+}
+
+.cookie-banner__content {
+  position: relative;
+  margin: 0 auto;
+  width: min(900px, 100%);
+  background: rgba(255, 253, 249, 0.98);
+  border: 1px solid rgba(143, 95, 67, 0.22);
+  border-radius: 14px;
+  box-shadow: 0 16px 32px rgba(45, 30, 23, 0.2);
+  padding: 16px;
+}
+
+.cookie-banner__close {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(143, 95, 67, 0.25);
+  border-radius: 999px;
+  background: rgba(255, 253, 249, 0.96);
+  color: var(--espresso);
+  font-size: 1.2rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.cookie-banner__title {
+  margin: 0 0 4px;
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.cookie-banner__text {
+  margin: 0;
+  color: var(--mist);
+  font-size: 0.94rem;
+}
+
+.cookie-banner__links {
+  margin: 8px 0 0;
+  font-size: 0.9rem;
+}
+
+.cookie-banner__links a {
+  color: var(--copper-dark);
+}
+
+.cookie-banner__prefs {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.cookie-banner__prefs label {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.9rem;
+}
+
+.cookie-banner__actions {
+  margin-top: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.cookie-banner__actions .btn {
+  min-width: 170px;
+  padding: 10px 14px;
+  justify-content: center;
+  background: rgba(181, 121, 82, 0.1);
+  border-color: rgba(143, 95, 67, 0.35);
+  color: var(--espresso);
+  box-shadow: none;
+}
+
+.cookie-manage-btn {
+  position: fixed;
+  right: 14px;
+  bottom: 14px;
+  z-index: 69;
+  border: 1px solid rgba(143, 95, 67, 0.3);
+  background: rgba(255, 253, 249, 0.96);
+  color: var(--espresso);
+  border-radius: 999px;
+  padding: 7px 12px;
+  font: inherit;
+  cursor: pointer;
+}
+
 .instagram {
   margin-top: 34px;
   background: linear-gradient(120deg, #fff5e8, #fff);
@@ -498,5 +603,19 @@ textarea {
     left: 12px;
     bottom: 12px;
     max-width: none;
+  }
+
+  .cookie-banner {
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+  }
+
+  .cookie-banner__content {
+    padding: 12px;
+  }
+
+  .cookie-banner__actions .btn {
+    width: 100%;
   }
 }
